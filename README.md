@@ -1,10 +1,10 @@
 # PROYECTO GRUPAL: ANALISIS Y VISUALIZACION DE DATOS DE LIBROS 
 
 # Descripción General
-Este proyecto consiste en extraer datos de libros desde la API de Open Library, transformarlos para realizar análisis de popularidad y almacenarlos en una base de datos SQL Server. Finalmente, se visualizarán los datos utilizando Python.
+Este proyecto consiste en extraer datos de libros desde la API de Google Books, transformarlos para realizar análisis de popularidad y almacenarlos en una base de datos SQL Server. Finalmente, se visualizarán los datos utilizando Python.
 
 # Propósito
-- Extraer datos de libros desde la API de Open Library.
+- Extraer datos de libros desde la API de Google Books.
 - Transformar los datos para categorizar la popularidad de los libros.
 - Almacenar los datos en una base de datos SQL Server.
 -Realizar análisis y visualización de los datos de libros.
@@ -21,7 +21,7 @@ Este proyecto consiste en extraer datos de libros desde la API de Open Library, 
 # Requisitos Previos
 - Python 3.8 o superior.
 - Conexión activa a Internet.
-- Credenciales de acceso a la API de Open Library.
+- Credenciales de acceso a la API de Google Books.
 - SQL Server instalado y configurado.
 - Biblioteca de Python para conectarse a SQL Server (pyodbc o pymssql).
 - Bibliotecas de Python para visualización de datos (pandas, matplotlib, seaborn).
@@ -34,10 +34,13 @@ pip install requests pyodbc pandas matplotlib seaborn
 # Configurar SQL Server:
 - Crear una base de datos en SQL Server.
 - Crear las tablas books y books_popularity.
-# Estructura del Proyecto
-Extracción de Datos:
-Utilizar requests para obtener datos de libros desde la API de Open Library.
-Transformación de Datos:
+  
+# ESTRUCTURA DEL PROYECTO
+
+# Extracción de Datos:
+Utilizar requests para obtener datos de libros desde la API de Google Books.
+
+# Transformación de Datos:
 Limpiar y transformar los datos utilizando pandas.
 
 # Carga de Datos:
@@ -45,3 +48,5 @@ Limpiar y transformar los datos utilizando pandas.
 
 # Análisis y Visualización:
 - Realizar análisis y visualizaciones utilizando pandas, matplotlib y seaborn.
+
+  ACLARO!: Dejo la Libertad de usar otras dependencias o extensiones que consideren! incluso las mejoras que deseaban aplicar en el proyecto anterior les invito a que puedan aplicar esas mejoras en este proyecto!, suerte. 
