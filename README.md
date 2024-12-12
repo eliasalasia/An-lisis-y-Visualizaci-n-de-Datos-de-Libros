@@ -27,11 +27,11 @@ Este proyecto consiste en extraer datos de libros desde la API de Open Library, 
 - Bibliotecas de Python para visualización de datos (pandas, matplotlib, seaborn).
   
 # Instrucciones de Configuración
--Instalar Python y Bibliotecas Necesarias:
+- Instalar Python y Bibliotecas Necesarias:
 sh
 pip install requests pyodbc pandas matplotlib seaborn
 
-#Configurar SQL Server:
+# Configurar SQL Server:
 - Crear una base de datos en SQL Server.
 - Crear las tablas books y books_popularity.
 # Estructura del Proyecto
