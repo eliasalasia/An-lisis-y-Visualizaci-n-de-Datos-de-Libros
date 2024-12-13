@@ -1,5 +1,4 @@
-# PROYECTO GRUPAL: ANALISIS Y VISUALIZACION DE DATOS DE LIBROS 
-
+# PROYECTO GRUPAL: ANÁLISIS Y VISUALIZACIÓN DE DATOS DE LIBROS
 # Descripción General
 Este proyecto consiste en extraer datos de libros desde la API de Google Books, transformarlos para realizar análisis de popularidad y almacenarlos en una base de datos SQL Server. Finalmente, se visualizarán los datos utilizando Python.
 
@@ -7,41 +6,44 @@ Este proyecto consiste en extraer datos de libros desde la API de Google Books, 
 - Extraer datos de libros desde la API de Google Books.
 - Transformar los datos para categorizar la popularidad de los libros.
 - Almacenar los datos en una base de datos SQL Server.
--Realizar análisis y visualización de los datos de libros.
+- Realizar análisis y visualización de los datos de libros.
 
 # Características Principales
 - Extraer columnas relevantes como título, autor, año de publicación, popularidad, etc.
-
 - Almacenar los datos crudos en una tabla llamada books en SQL Server.
-
 - Clasificar la popularidad de los libros y guardar los resultados en una tabla llamada books_popularity.
-
 - Visualizar los datos utilizando bibliotecas de visualización en Python.
-
-# Requisitos Previos
+- Requisitos Previos
 - Python 3.8 o superior.
 - Conexión activa a Internet.
 - Credenciales de acceso a la API de Google Books.
 - SQL Server instalado y configurado.
 - Biblioteca de Python para conectarse a SQL Server (pyodbc o pymssql).
 - Bibliotecas de Python para visualización de datos (pandas, matplotlib, seaborn).
-  
+- Credenciales de acceso a un servicio de Data Lake (por ejemplo, Azure Data Lake Storage).
 # Instrucciones de Configuración
-- Instalar Python y Bibliotecas Necesarias:
-sh
-pip install requests pyodbc pandas matplotlib seaborn
+# Instalar Python y Bibliotecas Necesarias:
 
-# Configurar SQL Server:
+sh
+pip install requests pyodbc pandas matplotlib seaborn azure-storage-file-datalake
+Configurar SQL Server:
+
 - Crear una base de datos en SQL Server.
 - Crear las tablas books y books_popularity.
   
+# Configurar el Data Lake:
+Obtener credenciales de acceso al servicio de Data Lake (Azure, Amazon S3, etc.).
+- Crear una estructura de directorios para almacenar los datos en bruto.
 # ESTRUCTURA DEL PROYECTO
-
 # Extracción de Datos:
-Utilizar requests para obtener datos de libros desde la API de Google Books.
+- Utilizar requests para obtener datos de libros desde la API de Google Books.
+- Guardar los datos en bruto en un Data Lake para almacenamiento flexible y masivo.
+
+# Almacenamiento en Data Lake:
+- Utilizar una solución de almacenamiento en la nube (como Azure Data Lake Storage) para almacenar los datos en bruto.
 
 # Transformación de Datos:
-Limpiar y transformar los datos utilizando pandas.
+- Limpiar y transformar los datos utilizando pandas.
 
 # Carga de Datos:
 - Insertar los datos en SQL Server utilizando pyodbc.
